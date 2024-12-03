@@ -7,9 +7,19 @@ class Game {
     }
 }
 
+render() {
+    render() {
+        this.ctx.fillStyle = 'red';
+     
+        this.ctx.fillRect(100, 100, 50, 150,);
+    }
+}
 window.addEventListener('load', function() {
     const canvas = document.getElementById('game-layout');
     const ctx = canvas.getContxt('2d');
     canvas.width = 720;
     canvas.height = 720;
+
+    const game = new Game(canvas, ctx);
+    game.render();
 });
